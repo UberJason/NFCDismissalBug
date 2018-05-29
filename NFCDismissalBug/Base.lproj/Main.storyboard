@@ -19,20 +19,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cd-TA-0re">
-                                <rect key="frame" x="169.5" y="555" width="35" height="30"/>
+                                <rect key="frame" x="169.5" y="543" width="35" height="30"/>
                                 <state key="normal" title="Read"/>
                                 <connections>
                                     <action selector="startReading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VBP-Ay-W4W"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6u7-j1-UvV">
-                                <rect key="frame" x="140" y="105" width="95" height="20.5"/>
+                                <rect key="frame" x="140" y="84" width="95" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="K0a-qE-Qjb">
-                                <rect key="frame" x="16" y="153" width="343" height="336.5"/>
+                                <rect key="frame" x="16" y="124.5" width="343" height="353"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZH-pA-XTK">
                                         <rect key="frame" x="0.0" y="0.0" width="336" height="101.5"/>
@@ -43,14 +43,20 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odh-y6-EI6">
                                         <rect key="frame" x="0.0" y="117.5" width="343" height="101.5"/>
-                                        <string key="text">2. This time, hold the NFC tag up to the phone in the correct reading position BEFORE tapping "Read", then tap "Read". The NFC modal will appear, a taptic instantly plays, and the modal instantly dismiss.</string>
+                                        <string key="text">2. This time, hold the NFC tag up to the phone in the correct reading position BEFORE tapping "Read", then tap "Read". The NFC modal will appear, a taptic instantly plays, and the modal instantly dismisses.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jls-Vq-Bxe">
-                                        <rect key="frame" x="0.0" y="235" width="343" height="101.5"/>
-                                        <string key="text">The delay should be consistent in both cases, and/or developer-controlled. We should get an event that the NFC modal was dismissed so we can coordinate animations or transitions after the dismissal.</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The delay should be consistent in both cases, and/or developer-controlled." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jls-Vq-Bxe">
+                                        <rect key="frame" x="0.0" y="235" width="300" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFO-2d-sDP">
+                                        <rect key="frame" x="0.0" y="292" width="336.5" height="61"/>
+                                        <string key="text">Also, we should get an event that the NFC modal was dismissed so we can coordinate animations or transitions after the dismissal.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -60,8 +66,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="K0a-qE-Qjb" firstAttribute="top" secondItem="6u7-j1-UvV" secondAttribute="bottom" constant="27.5" id="C0n-SO-cvX"/>
-                            <constraint firstItem="6u7-j1-UvV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="H0W-4R-0Ul"/>
+                            <constraint firstItem="K0a-qE-Qjb" firstAttribute="top" secondItem="6u7-j1-UvV" secondAttribute="bottom" constant="20" id="C0n-SO-cvX"/>
+                            <constraint firstItem="6u7-j1-UvV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="H0W-4R-0Ul"/>
                             <constraint firstItem="5cd-TA-0re" firstAttribute="top" secondItem="K0a-qE-Qjb" secondAttribute="bottom" constant="65.5" id="Hgl-ef-61r"/>
                             <constraint firstItem="K0a-qE-Qjb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Yik-cR-IAj"/>
                             <constraint firstItem="5cd-TA-0re" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z8e-Rm-ImZ"/>
